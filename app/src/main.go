@@ -1,17 +1,19 @@
 package main
 
 import (
-	customHash "github.com/ekinbulut-yemeksepeti/samples/hash"
+	hservice "github.com/ekinbulut-yemeksepeti/samples/app/hashtable"
 )
 
 func main() {
 
-	str := "Hello World"
+	// Create a new HashTable.
+	ht := hservice.NewHashTable(10)
 
-	hash := customHash.Hash(str)
+	// Add a new key-value pair.
+	ht.Add("key", "value")
+	ht.Add("key2", "value2")
+	ht.Add("key2", "value3")
 
-	println(hash)
-
-	// create a hash function
+	ht.Print()
 
 }
