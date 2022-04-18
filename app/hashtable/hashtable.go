@@ -40,3 +40,8 @@ func (ht *HashTable) Print() {
 		}
 	}
 }
+
+// size returns the size of the HashTable.
+func (ht *HashTable) Size() int {
+	return ht.size
+}
