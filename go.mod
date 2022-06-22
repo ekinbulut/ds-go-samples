@@ -1,3 +1,3 @@
-module github.com/ekinbulut-yemeksepeti/samples
+module samples
 
 go 1.18

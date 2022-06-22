@@ -1,6 +1,6 @@
 package hashtable
 
-import h "github.com/ekinbulut-yemeksepeti/samples/app/hash"
+import h "samples/app/hash"
 
 type HashTable struct {
 	size    int

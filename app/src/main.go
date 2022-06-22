@@ -1,8 +1,9 @@
 package main
 
 import (
-	aservice "github.com/ekinbulut-yemeksepeti/samples/app/arraylist"
-	hservice "github.com/ekinbulut-yemeksepeti/samples/app/hashtable"
+	aservice "samples/app/arraylist"
+	hservice "samples/app/hashtable"
+	t "samples/app/tree"
 )
 
 type App struct {
@@ -14,7 +15,7 @@ type App struct {
 
 func NewApp() *App {
 	return &App{
-		Name:      "App",
+		Name:      "Samples App",
 		Version:   "1.0.0",
 		ArrayList: aservice.NewArrayList(),
 		HashTable: hservice.NewHashTable(10),
@@ -23,7 +24,15 @@ func NewApp() *App {
 
 func main() {
 
-	a := NewApp()
-	a.ArrayList.Add(1)
-	a.ArrayList.Print()
+	t := t.NewTree()
+
+	t.Add(5)
+	t.Add(3)
+	t.Add(10)
+
+	t.Traversal()
+
+	// app := NewApp()
+	// app.ArrayList.Add(1)
+	// app.ArrayList.Print()
 }
