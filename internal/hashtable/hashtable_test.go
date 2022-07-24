@@ -3,7 +3,7 @@ package hashtable_test
 import (
 	"testing"
 
-	"samples/app/hashtable"
+	"samples/internal/hashtable"
 )
 
 // TestNewHashTable

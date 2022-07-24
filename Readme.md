@@ -1,4 +1,4 @@
-# Samples
+# Data Structure Samples
 
 This repository contains samples from most used data-structures.
 

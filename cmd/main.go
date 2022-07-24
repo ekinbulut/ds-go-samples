@@ -1,9 +1,9 @@
 package main
 
 import (
-	aservice "samples/app/arraylist"
-	hservice "samples/app/hashtable"
-	t "samples/app/tree"
+	aservice "samples/internal/arraylist"
+	hservice "samples/internal/hashtable"
+	t "samples/internal/tree"
 )
 
 type App struct {
@@ -15,7 +15,7 @@ type App struct {
 
 func NewApp() *App {
 	return &App{
-		Name:      "Samples App",
+		Name:      "DS Samples App",
 		Version:   "1.0.0",
 		ArrayList: aservice.NewArrayList(),
 		HashTable: hservice.NewHashTable(10),
