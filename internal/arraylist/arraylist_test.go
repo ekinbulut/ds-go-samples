@@ -4,7 +4,7 @@ package arraylist_test
 import (
 	"testing"
 
-	"samples/app/arraylist"
+	"samples/internal/arraylist"
 )
 
 // TestNewArrayList
